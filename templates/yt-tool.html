@@ -1,0 +1,33 @@
+{% include 'partials/_navbar.html' %}
+
+<div class="container my-3">
+    <div class="card">
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid rounded" src="/static/img/yt.jfif" alt="" style="width: 250px;">
+            </div>
+            <div class="col-7">
+                <form class="mb-3" action="/youtube-views-counter" method="post">
+                    <label class="form-label" for="youtube-link">Youtube Video Link:</label>
+                    <input class="form-control mb-3" type="text" id="input_link" name="youtube-link" placeholder="Enter the Youtube URL" required>
+                    <button class="btn btn-primary ms-3" type="submit" style="float: right;">Submit</button>
+                </form>
+                <button class="btn btn-warning" id="clear_button" style="float: right;">Clear</button>
+                <div class="container bg-light">
+                    <p class="error-message"></p>
+                    {% if result %}
+                        <p class="badge bg-dark">Result:</p>
+                    {% else %}
+                    <br><br>
+                    {% endif %}
+                    <p id="result" class="success-message">{{result}}</p>
+                </div>
+                <button class="btn btn-secondary ms-3 mt-3" id="copy_button" style="float: right;">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/scripts/script.js"></script>
+
+
+{% include 'partials/_footer.html' %}

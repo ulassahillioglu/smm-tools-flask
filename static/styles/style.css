@@ -1,0 +1,12 @@
+.index-article {
+    color: rgb(15, 14, 14);
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.article-header {
+    color: rgb(243, 243, 236);
+    font-size: 4.5em; /* Adjust the size as needed */
+    background-color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
