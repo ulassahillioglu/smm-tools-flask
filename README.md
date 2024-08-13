@@ -12,7 +12,7 @@ This is a lightweight web application that allows you to use the Social Media To
 - **Python**: Core functionality implemented in Python.
 
 ## Project Structure
-
+```bash
 smm-tools-flask/
 │
 ├── SmTools/ # Main application package
@@ -21,7 +21,7 @@ smm-tools-flask/
 ├── .gitignore # Git ignore file
 ├── app.py # Flask application entry point
 └── requirements.txt # Python dependencies
-
+```
 
 ## Installation
 
